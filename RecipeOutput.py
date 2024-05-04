@@ -16,7 +16,7 @@ def make_recipe_list():
         return recipes
     except FileNotFoundError:
         return None
-
+        
 def output_recipe(ingredients, recipes):
     try:
         file_path = Path("RecipePossible.txt")
@@ -26,7 +26,7 @@ def output_recipe(ingredients, recipes):
                 recipe_not_in = True
                 for ingredient in recipe[1:]:
                     if ingredient in ingredients and recipe_not_in:
-                        file.write(",".join(recipe) + "\n")
+                        file.write(recipe[0] + "\n")
                         recipe_not_in = False
                         break
     except IOError:
