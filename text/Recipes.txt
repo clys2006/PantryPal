@@ -1,0 +1,3 @@
+Egg Fried Rice, Egg, Rice
+Fried Egg, Egg
+Ham and Cheese Sandwich, Bread, Ham, Cheese 

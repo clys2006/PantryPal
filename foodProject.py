@@ -1,4 +1,5 @@
 from pygame import *
+
 import random
 
 init()
@@ -134,7 +135,7 @@ downArrow=image.load("img/8.png")
 downArrow= transform.scale(downArrow, (width,height))
 
 
-leftShiftArrow=image.load("img\9.png")#also in 5
+leftShiftArrow=image.load("img/9.png")#also in 5
 leftShiftArrow= transform.scale(leftShiftArrow, (width,height))
 rightShiftArrow=image.load("img/2.png")#also in 5
 rightShiftArrow= transform.scale(rightShiftArrow, (width,height))
@@ -156,7 +157,7 @@ rightArrowRect = titlePage.get_rect(center=(width/1.03, height/2))
 
 #get quotes
 quoteList=[]
-quotes = open("text\quotes.txt", "r")
+quotes = open("text/quotes.txt", "r")
 using = True
 while using == True:
     texteachline = quotes.readline()
